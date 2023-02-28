@@ -30,21 +30,7 @@
 			}
 			
 			document.getElementById("result").value = result;
-		}
-
-		var jetzt = new Date();
-		var stunden = jetzt.getHours();
-		var minuten = jetzt.getMinutes();
-		var sekunden = jetzt.getSeconds();
-  
-		stunden = (stunden < 10 ? "0" : "") + stunden;
-		minuten = (minuten < 10 ? "0" : "") + minuten;
-		sekunden = (sekunden < 10 ? "0" : "") + sekunden;
-  
-		var zeitString = stunden + ":" + minuten + ":" + sekunden;
-  
-		document.getElementById("zeit").innerHTML = zeitString;
-	 
+		} 
 	</script>
 	<body class="is-preload">
 
@@ -57,19 +43,18 @@
 					</header>
 
 				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">This is Massively</a></li>
-							<li class="active"><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+				<nav id="nav">
+					<ul class="links">
+						<li class="active"><a href="index.html">Überblick</a></li>
+							<li><a href="generic.html">Kosten</a></li>
+							<li><a href="elements.html">Haltung</a></li>
+					</ul>
+					<ul class="icons">
+						<li><a href="https://www.xing.com/pages/creativclicksgmbh" class="icon brands fa-xing"><span class="label">Xing</span></a></li>
+						<li><a href="https://www.facebook.com/creativclicks" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/creativclicks/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+				</nav>
 
 				<!-- Main -->
 					<div id="main">
@@ -78,12 +63,12 @@
 							<section class="post">
 								<header class="major">
 									<span class="date">April 25, 2017</span>
-									<h1>This is a<br />
-									Generic Page</h1>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									<h1>Kosten<br />
+									Überblick</h1>
+									<p>Die Entscheidung, eine Katze als Haustier aufzunehmen, erfordert nicht nur eine Menge Zeit und Aufmerksamkeit, sondern auch finanzielle Mittel. Die Kosten für eine Katze können je nach Rasse, Alter und Wohnort variieren und umfassen Dinge wie Anschaffung, Futter, Tierarztkosten und Zubehör. Es ist wichtig, dass angehende Katzenbesitzer die Kosten im Voraus abschätzen, um sicherzustellen, dass sie sich die Verantwortung für ein Haustier leisten können und es den Bedürfnissen des Tieres gerecht wird.</p>
+									<div class="image main"><img src="images/cat.jpg" alt="" /></div>
 									<form style="margin:auto; display:inline-block;">
+										<p>Rechne dir deine Kosten aus</p>
 								<input type="text" id="operand1" placeholder="Zahl">
 								<select id="operator" class="taschenrechner" >
 									<option value="+">+</option>
@@ -92,23 +77,28 @@
 									<option value="/">/</option>
 								</select>
 								<input type="text" id="operand2" placeholder="Zahl">
-								<input type="button" value="Berechnen" onclick="calculate()" style="margin-left: 2%;">
-								<br>
-								<input type="text" id="result" placeholder="Ergebnis">
+								<input type="text" id="result" placeholder="Ergebnis"><br>
+								<input type="button" value="Berechnen" onclick="calculate()">
 							</form>
 								</header>
 								
-								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+								
+								<ul>
+									<li>Anschaffungskosten: Die Kosten für den Kauf oder die Adoption einer Katze können je nach Rasse und Alter zwischen 50 und 500 Euro liegen.</li><br>
+									<li>Tierarztkosten: Regelmäßige Tierarztbesuche und Impfungen können etwa 100 bis 200 Euro pro Jahr kosten. Notfallbehandlungen oder Operationen können jedoch teurer sein.</li><br>
+									<li>Futterkosten: Die Kosten für hochwertiges Katzenfutter können je nach Marke und Qualität zwischen 15 und 50 Euro pro Monat liegen.</li><br>
+									<li>Zubehör: Katzen benötigen auch Zubehör wie Kratzbäume, Katzentoiletten, Futter- und Wassernäpfe, Spielzeug und Transportboxen. Diese Kosten können je nach Qualität und Anzahl der benötigten Artikel variieren, aber es können etwa 100 bis 200 Euro für die Erstausrüstung anfallen.</li><br>
+									<li>Versicherung: Eine Haustierversicherung kann auch eine Option sein, um unvorhergesehene Tierarztkosten zu decken. Die monatlichen Kosten können jedoch zwischen 10 und 50 Euro liegen, abhängig von der Art und dem Umfang der Versicherung.</li><br>
+								</ul>
+								<p>Insgesamt können die jährlichen Kosten für eine Katze etwa 500 bis 1000 Euro betragen, abhängig von den individuellen Bedürfnissen der Katze und ihrem Besitzer.</p>
 							</section>
 					</div>
 
 
 				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+				<div id="copyright">
+					<ul><li>&copy; Copyright 2023 | By <a href="https://www.creativclicks.de/home"><svg data-v-0a480254="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 17.13"><path data-v-0a480254="" d="M352.52,303.41a5.77,5.77,0,0,1-1.37,1.66,5.57,5.57,0,0,1-1.85,1,7.52,7.52,0,0,1-2.2.33,6.56,6.56,0,0,1-2.52-.47,6.41,6.41,0,0,1-2-1.38,4.92,4.92,0,0,1-1-1.36,5.94,5.94,0,0,1-.48-1.55,12.94,12.94,0,0,1-.17-1.77c0-.63,0-1.31,0-2s0-1.41,0-2a13.25,13.25,0,0,1,.17-1.77,6.06,6.06,0,0,1,.48-1.55,5.23,5.23,0,0,1,1-1.36,6.38,6.38,0,0,1,2-1.37,6.56,6.56,0,0,1,2.52-.47,7.22,7.22,0,0,1,2.21.33,5.58,5.58,0,0,1,1.84,1,5.94,5.94,0,0,1,1.37,1.67,7.05,7.05,0,0,1,.77,2.32H350a3.69,3.69,0,0,0-.93-1.7,2.55,2.55,0,0,0-1.91-.69,3.2,3.2,0,0,0-1.22.24,2.7,2.7,0,0,0-.89.64,3,3,0,0,0-.4.58,3.42,3.42,0,0,0-.26.84,11.79,11.79,0,0,0-.13,1.32q0,.81,0,2t0,2a11.74,11.74,0,0,0,.13,1.33,3.55,3.55,0,0,0,.26.84,3.32,3.32,0,0,0,.4.58,2.54,2.54,0,0,0,.89.63,2.86,2.86,0,0,0,1.22.24,2.5,2.5,0,0,0,1.91-.69,3.69,3.69,0,0,0,.93-1.7h3.33a7,7,0,0,1-.77,2.32" transform="translate(-340.9 -289.29)"></path><path data-v-0a480254="" d="M364.26,294.59a2.06,2.06,0,0,1-.65,1.6,2.41,2.41,0,0,1-1.74.62h-3.1v-4.45h3.1a2.41,2.41,0,0,1,1.74.62,2.08,2.08,0,0,1,.65,1.61m3,1.6a4.82,4.82,0,0,0,.25-1.6,5.42,5.42,0,0,0-.37-2,4.71,4.71,0,0,0-1.07-1.64,5.45,5.45,0,0,0-1.73-1.11,6.19,6.19,0,0,0-2.29-.41h-6.6v16.84h3.28v-6.72h2.37l3.28,6.72h3.81L364.47,299a5,5,0,0,0,1.17-.6,4.48,4.48,0,0,0,1.65-2.21" transform="translate(-340.9 -289.29)"></path><path data-v-0a480254="" d="M370.34,289.43v16.84h11.09v-2.94h-7.8v-4.09h6.64v-2.93h-6.65v-3.95h7.8v-2.93Z" transform="translate(-340.9 -289.29)"></path><path data-v-0a480254="" d="M391.06,294.4l2.05,6.12h-4.18Zm-1.37-5-6.13,16.84H387l1-3h6l1,3h3.43l-6.15-16.84Z" transform="translate(-340.9 -289.29)"></path><path data-v-0a480254="" d="M396.69,289.43v2.93h4.4v13.9h3.29v-13.9h4.4v-2.93Z" transform="translate(-340.9 -289.29)"></path><rect data-v-0a480254="" x="70.05" y="0.14" width="3.29" height="16.84"></rect><path data-v-0a480254="" d="M426.36,289.43l-3.38,11-3.38-11h-3.41l5.56,16.84h2.46l5.58-16.84Z" transform="translate(-340.9 -289.29)"></path><path data-v-0a480254="" d="M500.42,303.48a4.77,4.77,0,0,1-1.33,1.6,6.09,6.09,0,0,1-2,1,8.55,8.55,0,0,1-2.46.34,11,11,0,0,1-3.42-.48,6.73,6.73,0,0,1-2.73-1.74l2.13-2.13a4.3,4.3,0,0,0,1.84,1.11,7.58,7.58,0,0,0,2.22.31,3.87,3.87,0,0,0,2.23-.53,1.76,1.76,0,0,0,.75-1.55,1.83,1.83,0,0,0-.52-1.42,2.05,2.05,0,0,0-.58-.37,4.65,4.65,0,0,0-.91-.22l-2-.29a5.64,5.64,0,0,1-3.26-1.39,4.46,4.46,0,0,1-1.21-3.31,5.26,5.26,0,0,1,.4-2.07,4.61,4.61,0,0,1,1.16-1.61,5.53,5.53,0,0,1,1.84-1.05,7.66,7.66,0,0,1,2.46-.38,9.51,9.51,0,0,1,3.05.45,6.34,6.34,0,0,1,2.39,1.52l-2.07,2.05a3.72,3.72,0,0,0-1.72-1,8.44,8.44,0,0,0-1.74-.2,2.7,2.7,0,0,0-2,.63,2.06,2.06,0,0,0-.64,1.5,1.77,1.77,0,0,0,.12.64,1.68,1.68,0,0,0,.38.57,2.31,2.31,0,0,0,.65.41,3.24,3.24,0,0,0,.91.25l2,.28a7.89,7.89,0,0,1,1.91.49,4.37,4.37,0,0,1,1.3.81,3.68,3.68,0,0,1,1,1.54,6.36,6.36,0,0,1,.3,2,4.83,4.83,0,0,1-.49,2.18" transform="translate(-340.9 -289.29)"></path><path data-v-0a480254="" d="M442,303.41a5.77,5.77,0,0,1-1.37,1.66,5.52,5.52,0,0,1-1.86,1,7.42,7.42,0,0,1-2.2.33,6.59,6.59,0,0,1-2.52-.47,6.48,6.48,0,0,1-2-1.38,4.92,4.92,0,0,1-1-1.36,6,6,0,0,1-.49-1.55,12.94,12.94,0,0,1-.16-1.77c0-.63,0-1.31,0-2s0-1.41,0-2a13.23,13.23,0,0,1,.16-1.77,6.08,6.08,0,0,1,.49-1.55,5.23,5.23,0,0,1,1-1.36,6.12,6.12,0,0,1,4.54-1.84,6.89,6.89,0,0,1,2.21.33,5.45,5.45,0,0,1,1.85,1,6.12,6.12,0,0,1,1.37,1.67,7.05,7.05,0,0,1,.77,2.32h-3.34a3.73,3.73,0,0,0-.92-1.7,2.59,2.59,0,0,0-1.91-.69,3.16,3.16,0,0,0-1.22.24,2.56,2.56,0,0,0-.89.64,2.6,2.6,0,0,0-.4.58,3.42,3.42,0,0,0-.26.84,11.79,11.79,0,0,0-.13,1.32q0,.81,0,2t0,2a11.74,11.74,0,0,0,.13,1.33,3.15,3.15,0,0,0,.26.84,2.85,2.85,0,0,0,.4.58,2.54,2.54,0,0,0,.89.63,2.83,2.83,0,0,0,1.22.24,2.51,2.51,0,0,0,1.91-.69,3.68,3.68,0,0,0,.92-1.7h3.34a7,7,0,0,1-.77,2.32" transform="translate(-340.9 -289.29)"></path><path data-v-0a480254="" d="M444.81,289.43v16.84h10.93v-2.94H448.1v-13.9Z" transform="translate(-340.9 -289.29)"></path><rect data-v-0a480254="" x="116.81" y="0.14" width="3.29" height="16.84"></rect><path data-v-0a480254="" d="M474.61,303.41a5.77,5.77,0,0,1-1.37,1.66,5.52,5.52,0,0,1-1.86,1,7.42,7.42,0,0,1-2.2.33,6.54,6.54,0,0,1-2.51-.47,6.1,6.1,0,0,1-2-1.38,4.75,4.75,0,0,1-1-1.36,5.94,5.94,0,0,1-.48-1.55,12.94,12.94,0,0,1-.17-1.77c0-.63,0-1.31,0-2s0-1.41,0-2a13.25,13.25,0,0,1,.17-1.77,5.94,5.94,0,0,1,.48-1.55,5.27,5.27,0,0,1,1-1.36,6.34,6.34,0,0,1,2-1.37,6.59,6.59,0,0,1,2.52-.47,7.22,7.22,0,0,1,2.21.33,5.58,5.58,0,0,1,1.84,1,6,6,0,0,1,1.38,1.67,6.81,6.81,0,0,1,.76,2.32h-3.33a3.73,3.73,0,0,0-.92-1.7,2.57,2.57,0,0,0-1.92-.69,3.2,3.2,0,0,0-1.22.24,2.66,2.66,0,0,0-.88.64,2.5,2.5,0,0,0-.4.58,2.82,2.82,0,0,0-.26.84,9.83,9.83,0,0,0-.13,1.32c0,.54,0,1.21,0,2s0,1.48,0,2a9.82,9.82,0,0,0,.13,1.33,2.82,2.82,0,0,0,.26.84,2.5,2.5,0,0,0,.4.58,2.66,2.66,0,0,0,.88.64,3,3,0,0,0,1.22.23,2.56,2.56,0,0,0,1.92-.68,3.78,3.78,0,0,0,.92-1.7h3.33a6.78,6.78,0,0,1-.77,2.31" transform="translate(-340.9 -289.29)"></path><path data-v-0a480254="" d="M482.48,289.29l-5,8.64h0l4.95,8.48h3.9l-4.95-8.48h0l5-8.64Z" transform="translate(-340.9 -289.29)" class="sign c7"></path></svg></a></li></ul>
+				</div>
 
 			</div>
 
